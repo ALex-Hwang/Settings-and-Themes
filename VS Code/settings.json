@@ -1,0 +1,118 @@
+
+{
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "One Dark Pro",
+    "debug.console.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
+    "files.autoGuessEncoding": true,
+    "editor.fontFamily": "Monaco",
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": false,
+    "python.autoComplete.extraPaths": ["/home/Space/anaconda3/lib/python3.6/site-packages"],
+    "python.pythonPath": "/Space/anaconda3/python.app/Contents/MacOS/python",
+    "python.dataScience.sendSelectionToInteractiveWindow": false,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.iconTheme": "vscode-great-icons",
+    "editor.minimap.enabled": true,
+    "breadcrumbs.enabled": false,
+    "workbench.tree.indent": 25,
+    "editor.wordWrap": "on",
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk"
+            ]
+        },
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "xe->bib->xe->xe",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "pdflatex -> bib -> pdflatex*2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        }
+    ],
+
+    "latex-workshop.latex.clean.fileTypes": [
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.lot",
+    "*.out",
+    "*.toc",
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.ist",
+    "*.fls",
+    "*.log",
+    "*.fdb_latexmk"
+    ],
+    "editor.fontSize": 16
+
+}
